@@ -33,7 +33,7 @@ $$
 	- Select random action with probability $\epsilon_n \to 0$
 	- Better balance
 - Upper confidence bound
-	- Idea: the less we explored an action, the more value it can potentially have → we estimte upper confidence bound (from Hoeffding’s Inequality)$$q^*(a) \leq Q_t(a) + U_t(a)$$ $$U_t(a) = c\cdot \sqrt{\frac{\log t}{N_t(a)}}$$
+	- Idea: the less we explored an action, the more value it can potentially have → we estimte upper confidence bound (from Hoeffding’s Inequality) $$q^*(a) \leq Q_t(a) + U_t(a)$$ $$U_t(a) = c\cdot \sqrt{\frac{\log t}{N_t(a)}}$$
 	- Then select an action with highets upper bound
 - Bayesian Approach
 	- Idea: have a model with parameters $\theta \sim P(\theta)$ (prior). Update the distribution as we observe the data: $$P(\theta | D) = \frac{P(D | \theta) \cdot P(\theta)}{P(D)}$$
