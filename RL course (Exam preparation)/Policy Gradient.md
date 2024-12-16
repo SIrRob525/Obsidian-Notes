@@ -62,3 +62,4 @@
 	- $b = 0$ – equivalent to ordinary algorithm
 	- $b = V_\pi(s_t) = \sum_a \pi(a | s, \theta) \cdot Q_\pi(s, a)$ – advantage
 	- $b = \displaystyle \frac{\mathbb{E}_{\tau \sim \pi}[g(\tau)^2 r(\tau)]}{\mathbb{E}_{\tau \sim \pi}[g(\tau)^2]}$ – minimal variance
+- Problem: cannot reuse older episodes
